@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Prime Reading検索</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
+  <body>
+    <div class="title">Prime Reading検索</div>
+    <form onsubmit="search(); return false;">
+      <!-- フォームの送信を無効化 -->
+      <input
+        type="text"
+        id="word"
+        class="word"
+        size="28"
+        placeholder="検索キーワードを入力"
+      />
+      <input type="submit" value="検索" class="search" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

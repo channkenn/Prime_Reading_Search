@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif; /* 文字の読みやすさ向上 */
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.5em;
+  color: #888;
+  margin-bottom: 0.6em;
+}
+
+.word {
+  font-size: 1.2em;
+  padding: 0.5em; /* スペースを確保 */
+  width: 80%; /* 幅を80%にして中央寄せ */
+  max-width: 500px; /* 最大幅を設定 */
+  box-sizing: border-box;
+}
+
+.search {
+  font-size: 1.2em;
+  padding: 0.7em;
+  margin-top: 0.5em;
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 1em;
+}
+
+/** Normalize **/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.3em;
+  }
+
+  .word,
+  .search {
+    font-size: 1.1em;
+    width: 90%; /* モバイルではさらに幅を広げる */
+  }
+
+  .search {
+    padding: 0.8em; /* ボタンの高さを少し大きく */
+  }
+}
